@@ -1,6 +1,6 @@
 import requests
 
 x = requests.get('https://techiesneh-ts-m3u.vercel.app/api/getM3u?sid=1288435058_A&sname=Raj%20Aggarwal&ent=1000000085_1000000166_1000000231_1000000241_1000000273_1000000307_1000000323_1000000335_1000000520_1000000676_1000000695_1000001023_1000001051_1000001274_1000001368_1000001512_1000001572_1000002059&tkn=RAQ78LCwbFN7Z4ysRdDLVt7DvHvA0CZ8')
-
+x.text.replace("TSneh ","")
 with open("index.html", "w") as f:
     f.write(x.text)
